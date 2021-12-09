@@ -12,7 +12,7 @@
                 <option value="">Seleziona un genere</option>
                 <option
                     v-for="(genre, index) in genres"
-                    :key="index"
+                    :key="`genre ${index}`"
                     :value="genre"
                 >
                     {{ genre }}
@@ -28,7 +28,7 @@
                 <option value="">Seleziona un autore</option>
                 <option
                     v-for="(author, index) in authors"
-                    :key="index"
+                     :key="`author ${index}`"
                     :value="author"
                 >
                     {{ author }}
