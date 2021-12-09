@@ -1,9 +1,10 @@
 <template>
     <div class="disc p-3 text-center">
         <div class="p-3">
-            <img class="img-fluid mb-3" :src="discs.poster" :alt="disc.name" />
+            <img class="img-fluid mb-3" :src="disc.poster" :alt="disc.name" />
             <p class="title text-uppercase fw-bold">{{ disc.title }}</p>
-            <p class="author lead mb-0">{ disc.author }</p>
+            <p class="author lead mb-0">{{ disc.author }}</p> 
+            <!-- mancava una coppia di parentesi graffe -->
             <p class="year">{{ disc.year }}</p>
         </div>
     </div>
@@ -13,7 +14,8 @@
 export default {
     name: "Disc",
     props: {
-        disc: String,
+        disc: Object,
+        // Passo un oggetto, non una stringa
     },
 };
 </script>
