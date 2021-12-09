@@ -6,7 +6,7 @@
         <div>
             <select
                 v-model="genreFilter"
-                @change="$emit('changedGenere', genreFilter)"
+                @change="$emit('changedGenre', genreFilter)"
                 class="form-select mt-3"
             >
                 <option value="">Seleziona un genere</option>
@@ -31,7 +31,7 @@
                     :key="index"
                     :value="author"
                 >
-                    {{ genre }}
+                    {{ author }}
                 </option>
             </select>
 
