@@ -50,7 +50,7 @@ const cars = [
     {
         manufacturer: 'Ford',
         model: 'Kuga',
-        type: 'diesel'
+        type: 'Diesel'
     },
     {
         manufacturer: 'Seat',
@@ -60,18 +60,18 @@ const cars = [
     {
         manufacturer: 'Audi',
         model: 'R8',
-        type: 'benzina'
+        type: 'Benzina'
     },
 ];
 
-const gasolineCars = cars.filter( (auto) => auto.type === 'benzina');
+const gasolineCars = cars.filter( (auto) => auto.type.toLowerCase() === 'benzina');
 
 const dieselCars = cars.filter( (auto) => {
-    return auto.type === 'diesel';
+    return auto.type.toLowerCase() === 'diesel';
 });
 
 const otherCars = cars.filter( (auto) => {
-    return auto.type !== 'benzina' && auto.type !== 'diesel';
+    return auto.type.toLowerCase() !== 'benzina' && auto.type.toLowerCase() !== 'diesel';
 });
 
 console.log('Auto a benzina');
