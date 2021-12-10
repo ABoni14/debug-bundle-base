@@ -54,7 +54,7 @@ export default {
                         this.genres.push(disc.genre);
                     }
 
-                    if (!this.authors.includes(discs.author)) {
+                    if (!this.authors.includes(disc.author)) {
                         this.authors.push(disc.author);
                     }
                 });

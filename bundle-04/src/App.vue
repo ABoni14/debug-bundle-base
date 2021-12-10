@@ -26,7 +26,7 @@ export default {
     },
     methods: {
         getGenresAndAuthorsList(allGenresAndAuthors) {
-            allGenresAndAuthors = {};
+            // allGenresAndAuthors = {};
             this.genresList = allGenresAndAuthors.genres;
             this.authorsList = allGenresAndAuthors.authors;
         },
